@@ -1,0 +1,22 @@
+.step6 > .form-group > .form-control {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.step6 > .form-group > .form-control > input {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .step6 > .form-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step6 > .form-group > .form-control {
+    font-size: 0.8rem;
+  }
+}

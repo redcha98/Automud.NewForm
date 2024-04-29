@@ -1,0 +1,60 @@
+.form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.step3 .form-group:nth-child(2) {
+  margin-bottom: 1rem;
+}
+
+.step3 > .form-group {
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.step3 > .form-group > .form-control {
+  width: 280px;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  background-image: url("https://www.svgrepo.com/show/80156/down-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: calc(100% - 16px);
+  background-color: #fff;
+  color: #000000b2;
+}
+
+.step3 > .form-group > .form-control.disabled {
+  background-color: #fbf9ff;
+  border: 1px solid #e6e3ec;
+  opacity: 0.5;
+}
+
+.step3 > .form-group > .form-control.selected {
+  background-color: #9452ff;
+  color: #fff;
+}
+
+.step3 > .form-group > .form-control.selected option {
+  background-color: #fff;
+  color: #000000b2;
+}
+
+@media (max-width: 768px) {
+  .step3 {
+    gap: 0.5rem;
+  }
+
+  .step3 > .form-group > .form-control {
+    padding: 0.5rem 1rem;
+  }
+
+  .step3 > .form-group {
+    gap: 0.5rem;
+  }
+
+  .step3 button {
+    margin-top: 0;
+  }
+}

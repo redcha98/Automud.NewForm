@@ -1,0 +1,9 @@
+.step9 > .form-group {
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .step9 .form-control {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,125 @@
+.unreachable-container {
+  background-image: url("../../assets/images/SecondBG.svg");
+  background-color: #614bf2;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #f7f7f7;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 125px 0;
+}
+
+.unreachable-container > img {
+  margin-top: 86px;
+  width: 128px;
+}
+
+.unreachable-container > h1,
+.unreachable-container > h2 {
+  font-weight: 700;
+}
+
+.unreachable-container > h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.unreachable-container > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.unreachable-container > p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.buttons > button {
+  padding: 1rem 2rem;
+  border-radius: 1000px;
+  height: 48px;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buttons > button:first-child {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.buttons > button:first-child:hover {
+  background-color: #fff;
+  color: #614bf2;
+}
+
+.buttons > button:last-child {
+  background-color: #0aaa8d;
+}
+
+.buttons > button:last-child:hover {
+  background-color: #09816b;
+}
+
+.buttons > button:last-child > img {
+  width: 21px;
+}
+
+@media (max-width: 1280px) {
+  .unreachable-container {
+    text-align: center;
+    padding: 125px 1rem;
+  }
+
+  .unreachable-container > img {
+    margin-top: 2rem;
+  }
+
+  .unreachable-container > h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .unreachable-container > h2 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .unreachable-container > p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons > button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .unreachable-container {
+    padding: 80px 20px;
+    justify-content: flex-start;
+  }
+}

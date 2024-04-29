@@ -1,0 +1,130 @@
+.confirm-popup {
+  z-index: 1000;
+  width: 400px;
+  height: 500px;
+  border-radius: 35px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-pop-up-CAP-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.close-pop-up-CAP {
+  padding: 12px 12px;
+  background: rgba(33, 33, 33, 0.05);
+  border-radius: 1000px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm-popup > img {
+  width: 170px;
+}
+
+.confirm-popup > h1 {
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+}
+
+.confirm-popup > p {
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+.confirm-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 10px;
+}
+
+.confirm-buttons > button {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 1000px;
+  height: 48px;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.confirm-buttons > button:first-child {
+  background-color: #6a0fff;
+  color: #fff;
+}
+
+.confirm-buttons > button:first-child:hover {
+  background-color: #4a0fc7;
+}
+
+.confirm-buttons > button:last-child:hover {
+  background-color: #fff;
+  color: #6a0fff;
+}
+
+@media (max-width: 1280px) {
+  .confirm-popup {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+  }
+
+  .confirm-popup > img {
+    width: 120px;
+  }
+
+  .confirm-popup > h1 {
+    font-size: 25px;
+  }
+
+  .confirm-popup > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .pop-up-CAP {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .confirm-popup {
+    width: 100%;
+    border-radius: 35px 35px 0 0;
+    bottom: 0;
+    top: unset;
+    transform: translate(-50%, 0);
+  }
+}
+
+

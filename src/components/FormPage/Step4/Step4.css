@@ -1,0 +1,58 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.step-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.step-buttons > button {
+  border: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 1000px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.step-buttons > button:first-child {
+  background: transparent;
+  color: #21212159;
+}
+.step-buttons > button:first-child:hover {
+  color: #10002b;
+}
+.step-buttons > button:last-child {
+  background: #6a0fff;
+  color: #ffffff;
+}
+.step-buttons > button:last-child:hover {
+  background: #4a0fc7;
+  color: #ffffff;
+}
+
+.step-buttons > button:last-child:disabled {
+  background: rgba(33, 33, 33, 0.05);
+  color: rgba(33, 33, 33, 0.35);
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .step-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    gap: 0.5rem;
+  }
+}
